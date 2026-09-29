@@ -30,11 +30,9 @@ EVOKE supplies the missing pressure through **goal diversity at fixed states**. 
 
 ## ✨ Highlights
 
-- 🎯 **Elicit, don't predict** — goal interventions at fixed states turn the world knowledge of pretrained LLMs into decisions, without any observation-, state-, or latent-prediction objective.
-- 🚀 **Best across the board** — the best average on every benchmark (ALFWorld, WebShop, search-based QA) and every backbone (Qwen2.5-3B/7B-Instruct, Qwen3-1.7B), including all world-model and dynamics methods on 7B.
-- 🌍 **Transfers to unseen environments** — **91.1% / 93.1% / 84.6%** average success on unseen ALFWorld games with Qwen2.5-3B / Qwen2.5-7B / Qwen3-1.7B, the best on each backbone.
-- 🔬 **Gains traced to goal interventions and ranking** — removing alternative goals drops unseen success from **91.8%** to **82.8%**; imitating the same goal data instead of ranking it falls **7.5** points behind on unseen games.
-- 🧠 **The knowledge is already there** — action consequences are linearly decodable from the original backbone before any task training, and EVOKE makes the policy use them: it decides by the goal rather than by habit, making the fewest habitual errors (**6.4%** of decisions).
+- 🚀 **Best across the board** — best average on ALFWorld, WebShop, and search-based QA with all three backbones.
+- 🌍 **Transfers to unseen environments** — **91.1% / 93.1% / 84.6%** on unseen ALFWorld games (Qwen2.5-3B / 7B / Qwen3-1.7B).
+- 🧠 **Elicits, not adds, knowledge** — the backbone already encodes action consequences; EVOKE makes the policy decide by the goal rather than by habit.
 
 ## 🧩 Method Overview
 
