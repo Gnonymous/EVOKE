@@ -104,7 +104,7 @@ All analyses use Qwen2.5-3B on ALFWorld unless noted.
 
 - [ ] Paper on arXiv
 - [ ] Training and evaluation code (ALFWorld, WebShop, search-based QA)
-- [ ] Trained models (LoRA adapters)
+- [ ] Trained models
 - [ ] Goal-intervention preference data
 - [ ] Scripts to reproduce the main results and analyses
 
