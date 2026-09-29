@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="assets/title.png" alt="EVOKE: Eliciting World Knowledge in Agents for Transferable Decision-Making" width="100%"/>
+# 🌱 EVOKE: Eliciting World Knowledge in Agents for Transferable Decision-Making
+
+**Yuhan Guo**<sup>1</sup>, **Jinming Liu**<sup>1</sup>, **Liang Xu**<sup>1</sup>, **Ziqiang Li**<sup>1</sup>, **Jianguo Huang**<sup>1</sup>, **Zhicheng Wang**<sup>2</sup>, **Hu Zhu**<sup>2</sup>, **Qiuyu Chen**<sup>1</sup>, **Yuntao Wei**<sup>2</sup>, **Xin Jin**<sup>3</sup>, **Wenjun Zeng**<sup>3</sup>
+
+<sup>1</sup>Shanghai Jiaotong University &nbsp;·&nbsp; <sup>2</sup>Hong Kong Polytechnic University &nbsp;·&nbsp; <sup>3</sup>Eastern Institute of Technology, Ningbo
 
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg?logo=arxiv&logoColor=white)](#-updates)
 [![Code](https://img.shields.io/badge/Code-coming%20soon-lightgrey.svg?logo=github)](#-release-plan)
@@ -14,15 +18,15 @@
 
 **EVOKE** is a post-training method that elicits the world knowledge already inside pretrained LLM agents, so that they decide by the **consequences of their actions** rather than by contextual habits, and transfer to unseen environments.
 
-LLM agents post-trained on a set of tasks often do well where they were trained, yet drop considerably in environments they have not seen. World-model methods address this by learning to **predict** future observations, at the cost of an extra prediction objective and errors that compound during planning. For agents acting in digital environments, however, much of this knowledge is already internalized during pretraining; the problem shifts from **acquiring** it to **eliciting** it. Typical post-training supervises each visited state under a single goal, so a policy can fit the labels by associating familiar contexts with habitual next actions.
-
-EVOKE supplies the missing pressure through **goal diversity at fixed states**. It holds the environment state and interaction history fixed, swaps in alternative goals, and ranks the **same candidate actions** under each goal. Whenever the preferred action flips with the goal, no mapping from the context alone can rank the candidates correctly, which pushes the policy to draw on its knowledge of what each action does. At deployment, EVOKE is a standard policy: **no world-model module, no inference-time planning, and no annotator**.
-
 <p align="center">
-  <img src="assets/overview.png" width="72%" alt="EVOKE overview">
+  <img src="assets/overview.png" width="85%" alt="EVOKE overview">
   <br>
   <em>Figure 1: From prediction to preference. (a) World-model approaches predict action consequences before choosing an action. (b) Under single-goal supervision, a policy can fit habits that fail to transfer. (c) EVOKE instead supervises action preferences at a fixed state and history under different goals.</em>
 </p>
+
+LLM agents post-trained on a set of tasks often do well where they were trained, yet drop considerably in environments they have not seen. World-model methods address this by learning to **predict** future observations, at the cost of an extra prediction objective and errors that compound during planning. For agents acting in digital environments, however, much of this knowledge is already internalized during pretraining; the problem shifts from **acquiring** it to **eliciting** it. Typical post-training supervises each visited state under a single goal, so a policy can fit the labels by associating familiar contexts with habitual next actions.
+
+EVOKE supplies the missing pressure through **goal diversity at fixed states**. It holds the environment state and interaction history fixed, swaps in alternative goals, and ranks the **same candidate actions** under each goal. Whenever the preferred action flips with the goal, no mapping from the context alone can rank the candidates correctly, which pushes the policy to draw on its knowledge of what each action does. At deployment, EVOKE is a standard policy: **no world-model module, no inference-time planning, and no annotator**.
 
 ## 📰 Updates
 
