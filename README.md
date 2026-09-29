@@ -2,10 +2,11 @@
 
 # 🌱 EVOKE: Eliciting World Knowledge in Agents for Transferable Decision-Making
 
+[![Project Page](https://img.shields.io/badge/Project-Page-007BFF?logo=googlechrome&logoColor=white)](https://gnonymous.github.io/EVOKE)
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg?logo=arxiv&logoColor=white)](#-updates)
-[![Model](https://img.shields.io/badge/🤗%20Model-coming%20soon-yellow)](#-release-plan)
+[![Model](https://img.shields.io/badge/🤗%20Model-Hugging%20Face-yellow)](https://huggingface.co/Gnonymous/EVOKE)
 
-**[📑 Paper](#-updates)** · **[💡 Motivation](#-motivation)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
+**[🌐 Project Page](https://gnonymous.github.io/EVOKE)** · **[📑 Paper](#-updates)** · **[💡 Motivation](#-motivation)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
 
 </div>
 
@@ -21,7 +22,7 @@
 
 ## 📰 Updates
 
-- **`2026-09`**: 🏠 Repository created. Paper, code, models, and data are coming soon.
+- **`2026-09`**: 🏠 Repository and [project page](https://gnonymous.github.io/EVOKE) are live. Paper, code, models, and data are coming soon.
 
 ## ✨ Highlights
 
@@ -103,7 +104,7 @@ All analyses use Qwen2.5-3B on ALFWorld unless noted.
 
 - [ ] Paper on arXiv
 - [ ] Training and evaluation code (ALFWorld, WebShop, search-based QA)
-- [ ] Trained models
+- [ ] Trained models ([Hugging Face](https://huggingface.co/Gnonymous/EVOKE))
 - [ ] Goal-intervention preference data
 - [ ] Scripts to reproduce the main results and analyses
 
