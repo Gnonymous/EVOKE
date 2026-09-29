@@ -3,7 +3,6 @@
 # 🌱 EVOKE: Eliciting World Knowledge in Agents for Transferable Decision-Making
 
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg?logo=arxiv&logoColor=white)](#-updates)
-[![Code](https://img.shields.io/badge/Code-coming%20soon-lightgrey.svg?logo=github)](#-release-plan)
 [![Model](https://img.shields.io/badge/🤗%20Model-coming%20soon-yellow)](#-release-plan)
 
 **[📑 Paper](#-updates)** · **[💡 Motivation](#-motivation)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
