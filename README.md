@@ -22,7 +22,10 @@
 
 ## 💡 Motivation
 
-<img src="assets/overview.png" align="left" width="48%" alt="From prediction to preference">
+<table>
+<tr>
+<td width="50%"><img src="assets/overview.png" alt="From prediction to preference"></td>
+<td width="50%" valign="middle">
 
 **Do agents need to *predict* consequences to use them?**
 
@@ -32,7 +35,9 @@
 
 **(c) EVOKE.** Change the goal at a fixed state. Preferences flip, so habits fail and the policy must use its knowledge of consequences.
 
-<br clear="left">
+</td>
+</tr>
+</table>
 
 ## 📰 Updates
 
