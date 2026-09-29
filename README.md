@@ -4,7 +4,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg?logo=arxiv&logoColor=white)](#-updates)
 [![Code](https://img.shields.io/badge/Code-coming%20soon-lightgrey.svg?logo=github)](#-release-plan)
-[![Checkpoints](https://img.shields.io/badge/🤗%20Checkpoints-coming%20soon-yellow)](#-release-plan)
+[![Model](https://img.shields.io/badge/🤗%20Model-coming%20soon-yellow)](#-release-plan)
 
 **[📑 Paper](#-updates)** · **[💡 Motivation](#-motivation)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
 
@@ -22,7 +22,7 @@
 
 ## 📰 Updates
 
-- **`2026-09`**: 🏠 Repository created. Paper, code, checkpoints, and data are coming soon.
+- **`2026-09`**: 🏠 Repository created. Paper, code, models, and data are coming soon.
 
 ## ✨ Highlights
 
@@ -104,7 +104,7 @@ All analyses use Qwen2.5-3B on ALFWorld unless noted.
 
 - [ ] Paper on arXiv
 - [ ] Training and evaluation code (ALFWorld, WebShop, search-based QA)
-- [ ] Trained checkpoints (LoRA adapters)
+- [ ] Trained models (LoRA adapters)
 - [ ] Goal-intervention preference data
 - [ ] Scripts to reproduce the main results and analyses
 
