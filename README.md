@@ -22,11 +22,17 @@
 
 ## 💡 Motivation
 
-<p align="center">
-  <img src="assets/overview.png" width="75%" alt="EVOKE overview">
-  <br>
-  <em>From prediction to preference. (a) World-model approaches predict action consequences before choosing an action. (b) Under single-goal supervision, a policy can fit habits that fail to transfer. (c) EVOKE instead supervises action preferences at a fixed state and history under different goals.</em>
-</p>
+<img src="assets/overview.png" align="left" width="48%" alt="From prediction to preference">
+
+**Do LLM agents need to *predict* consequences to use them?**
+
+**(a) Predict consequences.** World-model methods train agents to predict future observations. This adds a costly prediction objective, and errors compound when predictions are used for planning.
+
+**(b) Single-goal supervision.** For agents in digital environments, much of this knowledge is already internalized during pretraining. But when each visited state is supervised under only one goal, the policy can fit the labels with contextual habits, which fail to transfer.
+
+**(c) EVOKE.** Hold the state and history fixed and change the goal. The preferred action flips, so no habit can rank the same candidate actions correctly under every goal; the policy has to draw on what it knows about each action's consequences.
+
+<br clear="left">
 
 ## 📰 Updates
 
