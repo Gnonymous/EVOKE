@@ -17,7 +17,7 @@
 <p align="center">
   <img src="assets/overview.png" width="85%" alt="EVOKE overview">
   <br>
-  <em>Figure 1: From prediction to preference. (a) World-model approaches predict action consequences before choosing an action. (b) Under single-goal supervision, a policy can fit habits that fail to transfer. (c) EVOKE instead supervises action preferences at a fixed state and history under different goals.</em>
+  <em>From prediction to preference. (a) World-model approaches predict action consequences before choosing an action. (b) Under single-goal supervision, a policy can fit habits that fail to transfer. (c) EVOKE instead supervises action preferences at a fixed state and history under different goals.</em>
 </p>
 
 ## 📰 Updates
@@ -35,15 +35,12 @@
 <p align="center">
   <img src="assets/pipeline.png" width="100%" alt="EVOKE training loop">
   <br>
-  <em>Figure 2: The EVOKE training loop. At collected states, actions are executed and assessed under alternative goals with the state, history, and available actions fixed. The policy learns by contrastive ranking on aggregated preferences; actions can switch between positive and competing across goals.</em>
+  <em>The EVOKE training loop. At collected states, actions are executed and assessed under alternative goals with the state, history, and available actions fixed. The policy learns by contrastive ranking on aggregated preferences; actions can switch between positive and competing across goals.</em>
 </p>
 
-1. **Policy rollout** — the current policy interacts with the environment to collect states and interaction histories.
-2. **Goal intervention** — at each collected state, the original goal is kept and alternative goals achievable from the same state are added; the state, history, and available actions stay identical across goals.
-3. **Action re-evaluation** — candidate actions are executed from the same state and labeled under each goal as advancing it or not, grounded in the observed outcome.
-4. **Iterative preference learning** — the policy is trained by contrastive ranking against its own favored mistakes, and each round aggregates data from all previous rounds.
-
 ## 📊 Results
+
+### Main Results
 
 <p align="center">
   <img src="assets/main_results.png" width="100%" alt="Main results on ALFWorld, WebShop, and search-based QA">
@@ -55,6 +52,39 @@
   <img src="assets/unseen_results.png" width="85%" alt="ALFWorld unseen results">
   <br>
   <em>Generalization to unseen ALFWorld games.</em>
+</p>
+
+### Analysis
+
+All analyses use Qwen2.5-3B on ALFWorld unless noted.
+
+<p align="center">
+  <img src="assets/ablations.png" width="75%" alt="Decision-supervision ablations">
+  <br>
+  <em><b>Decision-supervision ablations.</b> Removing alternative goals or replacing ranking with imitation hurts unseen success. Micro success (%) and average unseen steps, averaged over training seeds.</em>
+</p>
+
+<table>
+  <tr>
+    <td width="50%" align="center"><img src="assets/data_efficiency.png" alt="Data efficiency"></td>
+    <td width="50%" align="center"><img src="assets/iteration.png" alt="Iterative improvement"></td>
+  </tr>
+  <tr>
+    <td align="center"><em><b>Data efficiency.</b> EVOKE outperforms SFT at every budget.</em></td>
+    <td align="center"><em><b>Iterative improvement.</b> Every round improves every backbone.</em></td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="assets/knowledge_use.png" width="100%" alt="From knowledge to goal-directed decisions">
+  <br>
+  <em><b>From knowledge to goal-directed decisions.</b> (a) Action consequences are linearly decodable before any ALFWorld training. (b) EVOKE makes the fewest habitual errors, i.e., choosing the action that is correct for another goal in the same context.</em>
+</p>
+
+<p align="center">
+  <img src="assets/execution.png" width="100%" alt="Execution on unseen games">
+  <br>
+  <em><b>Execution on unseen games.</b> EVOKE succeeds earlier and wastes fewer actions: (a) cumulative success over steps, (b) invalid actions per game, (c) revisits per successful game.</em>
 </p>
 
 ## 📋 Release Plan
