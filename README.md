@@ -30,7 +30,7 @@
 
 **(b) Single-goal supervision.** The knowledge is already in pretrained LLMs, but one goal per state lets the policy fit habits that fail to transfer.
 
-**(c) EVOKE.** Change the goal at a fixed state. Preferences flip, so no habit can rank the actions; the policy must use what it knows about their consequences.
+**(c) EVOKE.** Change the goal at a fixed state. Preferences flip, so habits fail and the policy must use its knowledge of consequences.
 
 <br clear="left">
 
