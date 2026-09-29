@@ -6,7 +6,7 @@
 [![Code](https://img.shields.io/badge/Code-coming%20soon-lightgrey.svg?logo=github)](#-release-plan)
 [![Checkpoints](https://img.shields.io/badge/🤗%20Checkpoints-coming%20soon-yellow)](#-release-plan)
 
-**[📑 Paper](#-updates)** · **[🧩 Method](#-method-overview)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
+**[📑 Paper](#-updates)** · **[💡 Motivation](#-motivation)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
 
 </div>
 
@@ -15,9 +15,9 @@
 **EVOKE** is a post-training method that elicits the world knowledge already inside pretrained LLM agents, so that they decide by the **consequences of their actions** rather than by contextual habits. It holds the state fixed, swaps in alternative goals, and trains the policy to rank the **same candidate actions** under each goal, with no world-model module and no inference-time planning.
 
 <p align="center">
-  <img src="assets/overview.png" width="85%" alt="EVOKE overview">
+  <img src="assets/pipeline.png" width="100%" alt="EVOKE training loop">
   <br>
-  <em>From prediction to preference. (a) World-model approaches predict action consequences before choosing an action. (b) Under single-goal supervision, a policy can fit habits that fail to transfer. (c) EVOKE instead supervises action preferences at a fixed state and history under different goals.</em>
+  <em>The EVOKE training loop. At collected states, actions are executed and assessed under alternative goals with the state, history, and available actions fixed. The policy learns by contrastive ranking on aggregated preferences; actions can switch between positive and competing across goals.</em>
 </p>
 
 ## 📰 Updates
@@ -30,12 +30,12 @@
 - 🌍 **Transfers to unseen environments** — **91.1% / 93.1% / 84.6%** on unseen ALFWorld games (Qwen2.5-3B / 7B / Qwen3-1.7B).
 - 🧠 **Elicits, not adds, knowledge** — the backbone already encodes action consequences; EVOKE makes the policy decide by the goal rather than by habit.
 
-## 🧩 Method Overview
+## 💡 Motivation
 
 <p align="center">
-  <img src="assets/pipeline.png" width="100%" alt="EVOKE training loop">
+  <img src="assets/overview.png" width="75%" alt="EVOKE overview">
   <br>
-  <em>The EVOKE training loop. At collected states, actions are executed and assessed under alternative goals with the state, history, and available actions fixed. The policy learns by contrastive ranking on aggregated preferences; actions can switch between positive and competing across goals.</em>
+  <em>From prediction to preference. (a) World-model approaches predict action consequences before choosing an action. (b) Under single-goal supervision, a policy can fit habits that fail to transfer. (c) EVOKE instead supervises action preferences at a fixed state and history under different goals.</em>
 </p>
 
 ## 📊 Results
