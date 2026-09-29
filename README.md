@@ -20,6 +20,16 @@
   <em>The EVOKE training loop. At collected states, actions are executed and assessed under alternative goals with the state, history, and available actions fixed. The policy learns by contrastive ranking on aggregated preferences; actions can switch between positive and competing across goals.</em>
 </p>
 
+## 📰 Updates
+
+- **`2026-09`**: 🏠 Repository created. Paper, code, checkpoints, and data are coming soon.
+
+## ✨ Highlights
+
+- 🚀 **Best across the board** — best average on ALFWorld, WebShop, and search-based QA with all three backbones.
+- 🌍 **Transfers to unseen environments** — **91.1% / 93.1% / 84.6%** on unseen ALFWorld games (Qwen2.5-3B / 7B / Qwen3-1.7B).
+- 🧠 **Elicits, not adds, knowledge** — the backbone already encodes action consequences; EVOKE makes the policy decide by the goal rather than by habit.
+
 ## 💡 Motivation
 
 <table>
@@ -38,10 +48,6 @@
 </td>
 </tr>
 </table>
-
-## 📰 Updates
-
-- **`2026-09`**: 🏠 Repository created. Paper, code, checkpoints, and data are coming soon.
 
 ## 📊 Results
 
