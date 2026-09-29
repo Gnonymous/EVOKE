@@ -2,10 +2,6 @@
 
 # 🌱 EVOKE: Eliciting World Knowledge in Agents for Transferable Decision-Making
 
-**Yuhan Guo**<sup>1</sup>, **Jinming Liu**<sup>1</sup>, **Liang Xu**<sup>1</sup>, **Ziqiang Li**<sup>1</sup>, **Jianguo Huang**<sup>1</sup>, **Zhicheng Wang**<sup>2</sup>, **Hu Zhu**<sup>2</sup>, **Qiuyu Chen**<sup>1</sup>, **Yuntao Wei**<sup>2</sup>, **Xin Jin**<sup>3</sup>, **Wenjun Zeng**<sup>3</sup>
-
-<sup>1</sup>Shanghai Jiaotong University &nbsp;·&nbsp; <sup>2</sup>Hong Kong Polytechnic University &nbsp;·&nbsp; <sup>3</sup>Eastern Institute of Technology, Ningbo
-
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg?logo=arxiv&logoColor=white)](#-updates)
 [![Code](https://img.shields.io/badge/Code-coming%20soon-lightgrey.svg?logo=github)](#-release-plan)
 [![Checkpoints](https://img.shields.io/badge/🤗%20Checkpoints-coming%20soon-yellow)](#-release-plan)
