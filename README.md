@@ -6,7 +6,7 @@
 [![Code](https://img.shields.io/badge/Code-coming%20soon-lightgrey.svg?logo=github)](#-release-plan)
 [![Checkpoints](https://img.shields.io/badge/🤗%20Checkpoints-coming%20soon-yellow)](#-release-plan)
 
-**[📑 Paper](#-updates)** · **[🏗️ Method](#%EF%B8%8F-method-overview)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
+**[📑 Paper](#-updates)** · **[🧩 Method](#-method-overview)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
 
 </div>
 
@@ -36,7 +36,7 @@ EVOKE supplies the missing pressure through **goal diversity at fixed states**. 
 - 🔬 **Gains traced to goal interventions and ranking** — removing alternative goals drops unseen success from **91.8%** to **82.8%**; imitating the same goal data instead of ranking it falls **7.5** points behind on unseen games.
 - 🧠 **The knowledge is already there** — action consequences are linearly decodable from the original backbone before any task training, and EVOKE makes the policy use them: it decides by the goal rather than by habit, making the fewest habitual errors (**6.4%** of decisions).
 
-## 🏗️ Method Overview
+## 🧩 Method Overview
 
 <p align="center">
   <img src="assets/pipeline.png" width="100%" alt="EVOKE training loop">
