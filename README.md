@@ -1,9 +1,8 @@
 <div align="center">
 
-<h1>
-  <img src="assets/logo.png" height="44" align="center" alt="EVOKE logo">
-  EVOKE: Eliciting World Knowledge in Agents for Transferable Decision-Making
-</h1>
+<img src="assets/logo.png" height="84" alt="EVOKE logo">
+
+<h1>EVOKE: Eliciting World Knowledge in Agents for Transferable Decision-Making</h1>
 
 [![Project Page](https://img.shields.io/badge/Project-Page-007BFF?logo=googlechrome&logoColor=white)](https://gnonymous.github.io/EVOKE)
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg?logo=arxiv&logoColor=white)](#-updates)
