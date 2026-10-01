@@ -6,7 +6,7 @@
 
 [![Project Page](https://img.shields.io/badge/Project-Page-007BFF?logo=googlechrome&logoColor=white)](https://gnonymous.github.io/EVOKE)
 [![arXiv](https://img.shields.io/badge/arXiv-2609.38334-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.38334)
-[![Model](https://img.shields.io/badge/🤗%20Model-Hugging%20Face-yellow)](https://huggingface.co/Gnonymous/EVOKE)
+[![Model](https://img.shields.io/badge/🤗%20Model-Hugging%20Face-yellow)](https://huggingface.co/collections/Gnonymous/evoke)
 
 **[🌐 Project Page](https://gnonymous.github.io/EVOKE)** · **[📑 Paper](https://arxiv.org/abs/2609.38334)** · **[💡 Idea](#-from-prediction-to-preference)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
 
@@ -164,7 +164,7 @@ The code is released under Apache 2.0. Each model follows the license of its bas
 
 - [x] Paper on [arXiv](https://arxiv.org/abs/2609.38334)
 - [x] Evaluation code
-- [x] Trained models ([Hugging Face](https://huggingface.co/Gnonymous/EVOKE))
+- [x] Trained models ([Hugging Face](https://huggingface.co/collections/Gnonymous/evoke))
 - [ ] Training code
 - [ ] Goal-intervention preference data
 - [ ] Scripts to reproduce the main results and analyses
