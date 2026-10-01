@@ -101,13 +101,71 @@ All analyses use Qwen2.5-3B on ALFWorld unless noted.
   <em><b>Execution on unseen games.</b> EVOKE succeeds earlier and wastes fewer actions: (a) cumulative success over steps, (b) invalid actions per game, (c) revisits per successful game.</em>
 </p>
 
+## 🤗 Models
+
+| Model | Base model |
+| --- | --- |
+| [EVOKE-ALFWorld-3B](https://huggingface.co/Gnonymous/EVOKE-ALFWorld-3B) | Qwen2.5-3B-Instruct |
+| [EVOKE-ALFWorld-7B](https://huggingface.co/Gnonymous/EVOKE-ALFWorld-7B) | Qwen2.5-7B-Instruct |
+
+Both are full models and load directly with Transformers or vLLM:
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model_id = "Gnonymous/EVOKE-ALFWorld-3B"
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+model = AutoModelForCausalLM.from_pretrained(
+    model_id, torch_dtype="auto", device_map="auto"
+)
+```
+
+## 🏠 ALFWorld Evaluation
+
+### Installation
+
+Requires Linux, Python 3.11, an NVIDIA GPU, a C/C++ compiler, and CMake. The setup script creates two environments, one for inference and one for ALFWorld:
+
+```bash
+bash scripts/setup.sh
+```
+
+### Data
+
+Download the TextWorld evaluation resources from the official ALFWorld releases:
+
+```bash
+python3 scripts/download_data.py --data-root /path/to/alfworld
+```
+
+### Run
+
+```bash
+.venv/inference/bin/python evaluate_alfworld.py \
+  --model Gnonymous/EVOKE-ALFWorld-3B \
+  --data-root /path/to/alfworld/json_2.1.1 \
+  --output /path/to/results/evoke-3b \
+  --gpus 0
+```
+
+For 7B, use `--model Gnonymous/EVOKE-ALFWorld-7B`; a local model directory also works.
+
+- Quick check: add `--num-episodes 6 --seeds 20260911`.
+- Run the three seeds on separate GPUs: `--gpus 0,1,2`.
+- Environments installed with `scripts/setup.sh --env-root PATH`: run `PATH/inference/bin/python` and pass `--alfworld-python PATH/alfworld/bin/python`.
+
+## 📄 License
+
+The code is released under Apache 2.0. Each model follows the license of its base model: Qwen Research License for 3B and Apache 2.0 for 7B.
+
 ## 📋 Release Plan
 
 > **Last updated**: 2026-10-01
 
 - [x] Paper on [arXiv](https://arxiv.org/abs/2609.38334)
-- [ ] Training and evaluation code (ALFWorld, WebShop, search-based QA)
-- [ ] Trained models ([Hugging Face](https://huggingface.co/Gnonymous/EVOKE))
+- [x] Evaluation code
+- [x] Trained models ([Hugging Face](https://huggingface.co/Gnonymous/EVOKE))
+- [ ] Training code
 - [ ] Goal-intervention preference data
 - [ ] Scripts to reproduce the main results and analyses
 
