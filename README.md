@@ -5,10 +5,10 @@
 <h1>EVOKE: Eliciting World Knowledge in Agents for Transferable Decision-Making</h1>
 
 [![Project Page](https://img.shields.io/badge/Project-Page-007BFF?logo=googlechrome&logoColor=white)](https://gnonymous.github.io/EVOKE)
-[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg?logo=arxiv&logoColor=white)](#-updates)
+[![arXiv](https://img.shields.io/badge/arXiv-2609.38334-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.38334)
 [![Model](https://img.shields.io/badge/🤗%20Model-Hugging%20Face-yellow)](https://huggingface.co/Gnonymous/EVOKE)
 
-**[🌐 Project Page](https://gnonymous.github.io/EVOKE)** · **[📑 Paper](#-updates)** · **[💡 Idea](#-from-prediction-to-preference)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
+**[🌐 Project Page](https://gnonymous.github.io/EVOKE)** · **[📑 Paper](https://arxiv.org/abs/2609.38334)** · **[💡 Idea](#-from-prediction-to-preference)** · **[📊 Results](#-results)** · **[📋 Release Plan](#-release-plan)** · **[📝 Citation](#-citation)**
 
 </div>
 
@@ -24,7 +24,8 @@
 
 ## 📰 Updates
 
-- **`2026-09`**: 🏠 Repository and [project page](https://gnonymous.github.io/EVOKE) are live. Paper, code, models, and data are coming soon.
+- **`2026-10-01`**: 📄 The paper is on [arXiv](https://arxiv.org/abs/2609.38334).
+- **`2026-09`**: 🏠 Repository and [project page](https://gnonymous.github.io/EVOKE) are live. Code, models, and data are coming soon.
 
 ## ✨ Highlights
 
@@ -102,9 +103,9 @@ All analyses use Qwen2.5-3B on ALFWorld unless noted.
 
 ## 📋 Release Plan
 
-> **Last updated**: 2026-09-29
+> **Last updated**: 2026-10-01
 
-- [ ] Paper on arXiv
+- [x] Paper on [arXiv](https://arxiv.org/abs/2609.38334)
 - [ ] Training and evaluation code (ALFWorld, WebShop, search-based QA)
 - [ ] Trained models ([Hugging Face](https://huggingface.co/Gnonymous/EVOKE))
 - [ ] Goal-intervention preference data
@@ -112,7 +113,14 @@ All analyses use Qwen2.5-3B on ALFWorld unless noted.
 
 ## 📝 Citation
 
-The BibTeX entry will be added once the paper is available on arXiv.
+```bibtex
+@article{guo2026evoke,
+  title={EVOKE: Eliciting World Knowledge in Agents for Transferable Decision-Making},
+  author={Guo, Yuhan and Liu, Jinming and Xu, Liang and Li, Ziqiang and Huang, Jianguo and Wang, Zhicheng and Zhu, Hu and Chen, Qiuyu and Wei, Yuntao and Jin, Xin and Zeng, Wenjun},
+  journal={arXiv preprint arXiv:2609.38334},
+  year={2026}
+}
+```
 
 ## 📬 Contact
 
